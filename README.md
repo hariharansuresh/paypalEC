@@ -1,41 +1,61 @@
-# paypalEC <br/>
-Paypal express checkout sample application<br/>
-<br/>
-Implemented simple express payment workflow<br/>
-<br/>
-Flow of Application:<br/>
-<br/>
-->index.jsp<br/>
--> Paypal sandbox integration redirection *<br/>
-   ***************** START SetExpressCheckout ********************<br/>
-   --> login to paypal account<br/>
-   --> Verify address details<br/>
-   ***************** END SetExpressCheckout **********************<br/>
--> Review and confirm payment details<br/>
-   ***************** GetExpressCheckoutDetails *******************<br/>
--> If user confirms<br/>
-   ***************** DoExpressCheckoutPayment ********************<br/>
--> Summary page<br/>
-   <br/>
-<br/>
-Working URL : http://tomcatapp-paypalec.rhcloud.com/PayPalExpCheckout/<br/>
-<br/>
-Setup file : src/util/config.properties<br/>
-<br/>
-Sample configuration details:<br/>
-<br/>
-USER=traveleadapp-facilitator_api1.gmail.com<br/>
-PWD=UFD6Z548F3U879G4<br/>
-SIGN=AFcWxV21C7fd0v3bYYYRCpSSRl31Ax6Qj.Q5ue4Ln1eUlrNJKZZ6KK2h<br/>
-BNCODE=PP-ECWizard<br/>
-SANDBOX_FLAG=true<br/>
-VER=117<br/>
-PP_CHECKOUT_URL_SANDBOX=https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&token=<br/>
-PP_NVP_ENDPOINT_SANDBOX=https://api-3t.sandbox.paypal.com/nvp<br/>
-PP_CHECKOUT_URL=https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=<br/>
-PP_NVP_ENDPOINT=https://api-3t.paypal.com/nvp<br/>
-<br/>
-Sandbox buyer details:<br/>
-<br/>
-Buyer Id : traveleadapp-buyer-1@gmail.com <br/>
-password : traveleadapp123<br/>
+# paypalEC 
+Paypal express checkout sample application
+
+Implemented simple express payment workflow
+
+Flow of Application:
+
+->index.jsp
+
+-> Paypal sandbox integration redirection *
+
+   ***************** START SetExpressCheckout ********************
+   
+   --> login to paypal account
+   
+   --> Verify address details
+   
+   ***************** END SetExpressCheckout **********************
+   
+-> Review and confirm payment details
+
+   ***************** GetExpressCheckoutDetails *******************
+   
+-> If user confirms
+
+   ***************** DoExpressCheckoutPayment ********************
+   
+-> Summary page
+   
+
+Working URL : http://tomcatapp-paypalec.rhcloud.com/PayPalExpCheckout/
+
+Setup file : src/util/config.properties
+
+Sample configuration details:
+
+USER=traveleadapp-facilitator_api1.gmail.com
+
+PWD=UFD6Z548F3U879G4
+
+SIGN=AFcWxV21C7fd0v3bYYYRCpSSRl31Ax6Qj.Q5ue4Ln1eUlrNJKZZ6KK2h
+
+BNCODE=PP-ECWizard
+
+SANDBOX_FLAG=true
+
+VER=117
+
+PP_CHECKOUT_URL_SANDBOX=https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&token=
+
+PP_NVP_ENDPOINT_SANDBOX=https://api-3t.sandbox.paypal.com/nvp
+
+PP_CHECKOUT_URL=https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=
+
+PP_NVP_ENDPOINT=https://api-3t.paypal.com/nvp
+
+Sandbox buyer details:
+
+Buyer Id : traveleadapp-buyer-1@gmail.com 
+
+password : traveleadapp123
