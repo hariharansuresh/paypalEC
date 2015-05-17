@@ -1,0 +1,41 @@
+body{
+background-color: #e3e3e3;
+margin:0;
+padding:0;
+}
+#header{
+margin:0px;
+padding:0px;
+width:100%;
+font-family: tahoma;
+
+}
+#header h1{
+display:inline;
+text-align: center;
+vertical-align: middle;
+margin:0;
+padding:0;
+}
+.left{
+float:left;
+width:40%;
+vertical-align: middle;
+margin-left: 10%;
+
+}
+.right{
+float:right;
+width:40%;
+vertical-align: middle;
+margin-right: 10%;
+
+}
+input[type="text"]{
+width: 240px;
+}
+div#container{
+	width:70%;
+	margin-left: 35%;
+	
+}
